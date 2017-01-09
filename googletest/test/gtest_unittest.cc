@@ -1,4 +1,4 @@
-// Copyright 2005, Google Inc.
+﻿// Copyright 2005, Google Inc.
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -7574,4 +7574,8 @@ TEST_F(AdHocTestResultTest, AdHocTestResultTestForUnitTestDoesNotShowFailure) {
   const testing::TestResult& test_result =
       testing::UnitTest::GetInstance()->ad_hoc_test_result();
   EXPECT_FALSE(test_result.Failed());
+}
+
+TEST(UnicodeαβγTest, ProperlyEncodesабвгAnd𝕬Too) {
+  EXPECT_EQ(0, 0);
 }
