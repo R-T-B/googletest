@@ -216,7 +216,7 @@ INSTANTIATE_TYPED_TEST_CASE_P(My, FooTest, MyTypes);
               CaseName)>::Register("",                                        \
                                    ::testing::internal::CodeLocation(         \
                                        __FILE__, __LINE__),                   \
-                                   #CaseName, #TestName, 0,                   \
+                                   GTEST_UTF_8(#CaseName), GTEST_UTF_8(#TestName), 0,                   \
                                    ::testing::internal::GenerateNames<        \
                                        GTEST_NAME_GENERATOR_(CaseName),       \
                                        GTEST_TYPE_PARAMS_(CaseName)>());      \
@@ -270,7 +270,7 @@ INSTANTIATE_TYPED_TEST_CASE_P(My, FooTest, MyTypes);
   }; \
   static bool gtest_##TestName##_defined_ GTEST_ATTRIBUTE_UNUSED_ = \
       GTEST_TYPED_TEST_CASE_P_STATE_(CaseName).AddTestName(\
-          __FILE__, __LINE__, #CaseName, #TestName); \
+          __FILE__, __LINE__, GTEST_UTF_8(#CaseName), GTEST_UTF_8(#TestName)); \
   } \
   template <typename gtest_TypeParam_> \
   void GTEST_CASE_NAMESPACE_(CaseName)::TestName<gtest_TypeParam_>::TestBody()
