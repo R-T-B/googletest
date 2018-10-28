@@ -529,8 +529,8 @@ internal::CartesianProductHolder10<Generator1, Generator2, Generator3,
               GTEST_UTF_8(#test_case_name), \
               ::testing::internal::CodeLocation(\
                   __FILE__, __LINE__))->AddTestPattern(\
-                      GTEST_UTF_8(GTEST_STRINGIFY_(test_case_name)), \
-                      GTEST_UTF_8(GTEST_STRINGIFY_(test_name)), \
+                      GTEST_STRINGIFY_(test_case_name), \
+                      GTEST_STRINGIFY_(test_name), \
                       new ::testing::internal::TestMetaFactory< \
                           GTEST_TEST_CLASS_NAME_(\
                               test_case_name, test_name)>()); \

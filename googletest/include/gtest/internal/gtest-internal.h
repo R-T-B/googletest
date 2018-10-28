@@ -77,7 +77,7 @@
 #define GTEST_CONCAT_TOKEN_IMPL_(foo, bar) foo ## bar
 
 // Stringifies its argument.
-#define GTEST_STRINGIFY_(name) #name
+#define GTEST_STRINGIFY_(name) u8###name
 
 class ProtocolMessage;
 namespace proto2 { class Message; }
