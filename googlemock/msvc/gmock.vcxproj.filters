@@ -9,9 +9,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\gmock\gmock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\gmock\gmock-actions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -39,9 +36,6 @@
     <ClInclude Include="..\include\gmock\gmock-more-matchers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\gmock\gmock-spec-builders.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\gmock\internal\gmock-generated-internal-utils.h">
       <Filter>Source Files</Filter>
     </ClInclude>
@@ -51,6 +45,8 @@
     <ClInclude Include="..\include\gmock\internal\gmock-port.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="\..\include\gmock\gmock-spec-builders.h" />
+    <ClInclude Include="\..\include\gmock\gmock.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\gmock.cc">
